@@ -20,15 +20,16 @@
 
 		<!-- Phiên bản dùng chung -->
 		<webdriver.version>4.16.1</webdriver.version>
-		<selenium.version>4.21.0</selenium.version>
-		<testng.version>7.9.0</testng.version>
+		<webdrivermanager.version>6.3.3</webdrivermanager.version>
+		<selenium.version>4.38.0</selenium.version>
+		<testng.version>7.11.0</testng.version>
 		<jackson.version>2.17.0</jackson.version>
 		<faker.version>1.0.2</faker.version>
-		<poi.version>5.2.5</poi.version>
+		<poi.version>5.4.1</poi.version>
 		<aspectj.version>1.9.8</aspectj.version>
 		<allure.version>2.24.0</allure.version>
-		<extent.version>5.1.0</extent.version>
-		<log4j.version>2.19.0</log4j.version>
+		<extent.version>5.1.2</extent.version>
+		<log4j2.version>2.20.0</log4j2.version>
 		<reportng.version>1.1.4</reportng.version>
 	</properties>
 
@@ -71,7 +72,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.11.0</version>
+			<version>2.20.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -83,7 +84,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.9.1</version>
+			<version>6.3.3</version>
 		</dependency>
 
 		<!-- 📦 Json - Jackson -->
@@ -196,8 +197,14 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.1.2</version>
 		</dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.11.0</version>
+            <scope>compile</scope>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
 	<!-- ===========================
             3) BUILD CONFIG

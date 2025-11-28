@@ -39,11 +39,8 @@ public class Employee_20_4_Data_Excel extends BaseTest {
 		driver = getBrowserDriver(browserName, urlValue);
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 		
-		//excelData = ExcelHelper.readExcel("ExcelDataorangehrm.xlsx", "currentSheet");
 		excelData = ExcelHelper.readExcel("testdata/DataTestExcel.xlsx", "currentSheet");
-		// excelData = ExcelHelper.readExcel("src/test/resources/testdata/DataTestExcel.xlsx","currentSheet" );
-		 System.out.println(excelData);
-		 
+		
 		firstName = excelData.get(0).get("firstName");
 		lastName =excelData.get(0).get("lastName");
 		editFirstName = excelData.get(0).get("editFirstName");
